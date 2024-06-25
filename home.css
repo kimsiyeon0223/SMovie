@@ -2,12 +2,12 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #121212;
-  color: #fff;
+  background-color: #f0f8ff;
+  color: #333;
 }
 
 header {
-  background-color: #1c1c1c;
+  background-color: #ff7f50;
   padding: 20px;
   text-align: center;
 }
@@ -15,6 +15,7 @@ header {
 header .logo {
   font-size: 1.5em;
   font-weight: bold;
+  color: #fff;
 }
 
 header nav ul {
@@ -43,14 +44,17 @@ header nav ul li a {
   border: none;
   border-radius: 5px;
   margin-right: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
 .search button {
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
-  background-color: #f39c12;
-  color: #fff;
+  background-color: #ffe4b5;
+  color: #ff4500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 .movie-list {
@@ -60,12 +64,19 @@ header nav ul li a {
 }
 
 .movie-card {
-  background-color: #1c1c1c;
+  background-color: #ffe4b5;
   border-radius: 10px;
   margin: 10px;
   padding: 10px;
   width: 200px;
   text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.movie-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
 .movie-card img {
@@ -75,4 +86,5 @@ header nav ul li a {
 
 .movie-card h3 {
   margin: 10px 0;
+  color: #ff4500;
 }
